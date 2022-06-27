@@ -11,10 +11,13 @@ import {RegisterComponent} from './register/register.component';
 import {NzSelectModule} from "ng-zorro-antd/select";
 import {ForgotPasswordComponent} from './forgot-password/forgot-password.component';
 import {ResetPasswordComponent} from './reset-password/reset-password.component';
+import {AuthComponent} from './auth.component';
+import {NzLayoutModule} from "ng-zorro-antd/layout";
 
 
 @NgModule({
     declarations: [
+        AuthComponent,
         LoginComponent,
         RegisterComponent,
         ForgotPasswordComponent,
@@ -27,7 +30,8 @@ import {ResetPasswordComponent} from './reset-password/reset-password.component'
         NzInputModule,
         NzCheckboxModule,
         NzButtonModule,
-        NzSelectModule
+        NzSelectModule,
+        NzLayoutModule
     ]
 })
 export class AuthModule {

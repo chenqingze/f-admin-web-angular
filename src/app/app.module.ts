@@ -9,7 +9,6 @@ import zh from '@angular/common/locales/zh';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {CoreModule} from "./core/core.module";
 import {SharedModule} from "./shared/shared.module";
-import {AuthModule} from "./pages/auth/auth.module";
 
 registerLocaleData(zh);
 
@@ -24,10 +23,7 @@ registerLocaleData(zh);
         // core & shared
         CoreModule,
         SharedModule.forRoot(),
-        AuthModule,
         AppRoutingModule,
-
-
     ],
     providers: [{provide: NZ_I18N, useValue: zh_CN}],
     bootstrap: [AppComponent]
