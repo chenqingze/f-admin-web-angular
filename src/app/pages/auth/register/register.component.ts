@@ -7,7 +7,7 @@ import {NzFormTooltipIcon} from 'ng-zorro-antd/form';
     selector: 'app-register',
     templateUrl: './register.component.html',
 
-    styleUrls: ['./register.component.css']
+    styleUrls: ['./register.component.less']
 })
 export class RegisterComponent implements OnInit {
     validateForm!: FormGroup;

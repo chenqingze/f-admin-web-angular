@@ -6,6 +6,7 @@ import {Component, OnInit} from '@angular/core';
     styleUrls: ['./welcome.component.less']
 })
 export class WelcomeComponent implements OnInit {
+    gender = 'female';
 
     constructor() {
     }
@@ -13,4 +14,15 @@ export class WelcomeComponent implements OnInit {
     ngOnInit() {
     }
 
+    male() {
+        this.gender = 'male';
+    }
+
+    female() {
+        this.gender = 'female';
+    }
+
+    other() {
+        this.gender = 'other';
+    }
 }

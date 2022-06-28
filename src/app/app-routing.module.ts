@@ -20,7 +20,7 @@ const routes: Routes = [
         loadChildren: () => import('./pages/auth/auth.module').then(m => m.AuthModule)
     },
     // Fallback when no prior routes is matched
-    { path: '**', redirectTo: '/auth/login', pathMatch: 'full' }
+    {path: '**', redirectTo: '/auth/login', pathMatch: 'full'}
 ];
 
 @NgModule({

@@ -16,10 +16,24 @@
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
+      "i18n": {
+        "sourceLocale": "en-US",
+        "locales": {
+          "en": {
+            "translation": "src/locale/messages.en.json",
+            "baseHref": "en"
+          },
+          "zh": {
+            "translation": "src/locale/messages.zh.json",
+            "baseHref": "zh"
+          }
+        }
+      },
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+            "localize": true,
             "outputPath": "dist/f-admin-web-angular",
             "index": "src/index.html",
             "main": "src/main.ts",
@@ -70,6 +84,12 @@
               "extractLicenses": false,
               "sourceMap": true,
               "namedChunks": true
+            },
+            "en": {
+              "localize": ["en"]
+            },
+            "zh": {
+              "localize": ["zh"]
             }
           },
           "defaultConfiguration": "production"
@@ -82,6 +102,12 @@
             },
             "development": {
               "browserTarget": "f-admin-web-angular:build:development"
+            },
+            "en": {
+              "browserTarget": "f-admin-web-angular:build:en"
+            },
+            "zh": {
+              "browserTarget": "f-admin-web-angular:build:zh"
             }
           },
           "defaultConfiguration": "development"

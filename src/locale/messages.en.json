@@ -1,0 +1,10 @@
+{
+  "locale": "en",
+  "translations": {
+    "1045585405965090820": " Hello i18n!\n",
+    "3022994926184248873": "Hello world!",
+    "5206857922697139278": "I don't output any element",
+    "3560311772637911677": "The author is {$ICU}",
+    "7670372064920373295": "{VAR_SELECT, select, male {male} female {female} other {other}}"
+  }
+}
